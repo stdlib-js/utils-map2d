@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/utils-map2d",
+  "version": "0.0.0",
+  "description": "Apply a function to each nested element in an array of arrays and assign the result to a nested element in a new array of arrays.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-map2d.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "map",
+    "array",
+    "nested",
+    "matrix",
+    "transform",
+    "invoke",
+    "call",
+    "apply",
+    "function",
+    "fun",
+    "func",
+    "fcn"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
