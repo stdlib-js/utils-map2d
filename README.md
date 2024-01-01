@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-map2d
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var map2d = require( '@stdlib/utils-map2d' );
+import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@esm/index.mjs';
 ```
 
 #### map2d( arr, fcn\[, thisArg] )
@@ -76,8 +60,8 @@ var map2d = require( '@stdlib/utils-map2d' );
 Applies a function to each nested element in an array of arrays and assigns the result to a nested element in a new array of arrays.
 
 ```javascript
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var abs = require( '@stdlib/math-base-special-abs' );
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
 
 var arr = [
     [ -1, -2, -3 ],
@@ -99,7 +83,7 @@ To set the `this` context when invoking the input function, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-var abs = require( '@stdlib/math-base-special-abs' );
+import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
 
 function fcn( v ) {
     this.count += 1;
@@ -142,12 +126,17 @@ var cnt = ctx.count;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var filledarrayBy = require( '@stdlib/array-filled-by' );
-var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
-var naryFunction = require( '@stdlib/utils-nary-function' );
-var abs2 = require( '@stdlib/math-base-special-abs2' );
-var map2d = require( '@stdlib/utils-map2d' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by@esm/index.mjs';
+var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
+import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
+import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@esm/index.mjs';
+import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@esm/index.mjs';
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
@@ -168,6 +157,10 @@ console.log( x );
 
 console.log( 'y:' );
 console.log( y );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -209,7 +202,7 @@ console.log( y );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -271,15 +264,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map
+[@stdlib/utils/map]: https://github.com/stdlib-js/utils-map/tree/esm
 
-[@stdlib/utils/map3d]: https://github.com/stdlib-js/utils-map3d
+[@stdlib/utils/map3d]: https://github.com/stdlib-js/utils-map3d/tree/esm
 
-[@stdlib/utils/map4d]: https://github.com/stdlib-js/utils-map4d
+[@stdlib/utils/map4d]: https://github.com/stdlib-js/utils-map4d/tree/esm
 
-[@stdlib/utils/map5d]: https://github.com/stdlib-js/utils-map5d
+[@stdlib/utils/map5d]: https://github.com/stdlib-js/utils-map5d/tree/esm
 
-[@stdlib/utils/reduce2d]: https://github.com/stdlib-js/utils-reduce2d
+[@stdlib/utils/reduce2d]: https://github.com/stdlib-js/utils-reduce2d/tree/esm
 
 <!-- </related-links> -->
 
