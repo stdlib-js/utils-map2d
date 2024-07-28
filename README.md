@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@esm/index.mjs';
+import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@v0.2.2-esm/index.mjs';
 ```
 
 #### map2d( arr, fcn\[, thisArg] )
@@ -136,7 +136,7 @@ import filledarrayBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled-by
 var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
 import abs2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs2@esm/index.mjs';
-import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@esm/index.mjs';
+import map2d from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map2d@v0.2.2-esm/index.mjs';
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
